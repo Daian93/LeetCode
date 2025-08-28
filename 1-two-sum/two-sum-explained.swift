@@ -1,6 +1,6 @@
 class Solution {
 		/* 
-		Es un función que tiene como parámetros un array de números 
+		Es una función que tiene como parámetros un array de números 
 		y como objetivo un número al que tendríamos que llegar haciendo
 		la suma de dos números que se encuentran dentro del array.
 		Se devuelve un array que contiene los índices de los dos números 
