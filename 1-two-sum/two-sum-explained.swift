@@ -1,3 +1,5 @@
+// Time: O(n)
+// Space: O(n)
 class Solution {
 	/* 
 	Es una función que tiene como parámetros un array de números 
@@ -52,6 +54,10 @@ class Solution {
 		la diferencia ya existe dentro del diccionario. Si existe, devolvemos 
 		un array con el índice del número previo y el del actual; si no, añadimos
 		ese número al diccionario en el índice correspondiente.
+
+		Se trata de un optional binding en Swift. Si dict[diff] no es nil, lo
+		desempaquetamos ylo ponemos en la constante prevIndex y entramos en el 
+		bloque if. Si es nil, entramos en el else.
 		*/
         for (index, num) in nums.enumerated() {
             let diff = target - num
