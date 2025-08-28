@@ -25,8 +25,8 @@ class Solution {
 		  demos cuenta (por ejemplo en last = m + n - 1).
 		  */
 	    var p1 = m - 1           
-      var p2 = n - 1           
-      var p = m + n - 1       
+      	var p2 = n - 1           
+     	var p = m + n - 1       
 
         /* Merge en orden inverso. Mientras haya elementos pendientes, comparamos 
         los elementos más grandes pendientes de cada array (nums1[p1] y nums2[p2]).
@@ -48,7 +48,7 @@ class Solution {
 
         // Si quedan elementos en nums2, los copiamos.
         while p2 >= 0 {
-            nums1[p] = nums2[p2]
+        	nums1[p] = nums2[p2]
             p2 -= 1
             p -= 1
         }
