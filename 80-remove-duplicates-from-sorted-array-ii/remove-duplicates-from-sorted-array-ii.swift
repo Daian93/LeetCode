@@ -1,6 +1,8 @@
 class Solution {
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        guard nums.count > 2 else { return nums.count }
+        if nums.count <= 2 {
+            return nums.count
+        }
 
         var n = 2
 
